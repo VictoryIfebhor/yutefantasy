@@ -1,3 +1,8 @@
+// IMPORTANT
+
+// IF ANY UPDATE IS DONE TO THIS JS FILE
+// INCREMENT THE QUERY PARAMETER OF THE LINK TO THIS JS FILE.
+
 const data = [];
 const id = 107557;
 const table = document.getElementById("table");
