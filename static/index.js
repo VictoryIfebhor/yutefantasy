@@ -25,11 +25,14 @@ const fetchFPL = async () => {
     data.data.map((player) => {
       const teamName = player["entry_name"];
       const point = player["event_total"];
+      const playerName = player["player_name"];
       table.innerHTML += `
-        <tr>
-          <td>${teamName}</td>
-          <td>${point}</td>
-        </tr>`;
+      <tr>
+        <td class="column1">${teamName}</td>
+        <td class="column2">${point}</td>
+        <td class="column3">${playerName}</td>
+      </tr>
+      `;
     });
   } catch (error) {
     console.log(error);

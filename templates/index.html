@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+	<title>Vick-FPL</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
-    <title>Manager of the week</title>
-  </head>
-  <body>
-    <h1>TOP 10 Manager of the week</h1>
-    <table>
-      <thead>
-        <tr>
-          <td>Team Name</td>
-          <td>Point</td>
-        </tr>
-      </thead>
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
 
-      <tbody id="table">
-        <tr>
-          <td><span id="loading">Loading...</span></td>
-        </tr>
-      </tbody>
-    </table>
+	<div class="limiter">
+		<div class="container-table100">
+            <h1>Top 10 Manager of the week</h1>
+			<div class="wrap-table100">
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">Team</th>
+								<th class="column2">Point</th>
+								<th class="column3">Manager</th>
+							</tr>
+						</thead>
+						<tbody id="table">
+								<tr id="loading">
+                                    <td class="column1">Loading...</td>
+                                    <td class="column2">Loading...</td>
+                                    <td class="column3">Loading...</td>
+                                </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <script src="/static/index.js?v=2"></script>
-  </body>
+
+	
+
+<!--===============================================================================================-->	
+	<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/vendor/bootstrap/js/popper.js"></script>
+	<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/js/main.js"></script>
+<!--===============================================================================================-->
+    <script src="/static/index.js?v=3"></script>
+</body>
 </html>
