@@ -29,8 +29,8 @@ const fetchFPL = async () => {
       const link = player["link_to_team"];
       table.innerHTML += `
       <tr>
-        <td class="column1"><a href=${link}>${teamName}</a></td>
-        <td class="column2"><a href=${link}>${point}</a></td>
+        <td class="column1"><a href=${link} target="_blank">${teamName}</a></td>
+        <td class="column2"><a href=${link} target="_blank>${point}</a></td>
         <td class="column3">${playerName}</td>
       </tr>
       `;
