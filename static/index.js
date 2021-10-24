@@ -26,10 +26,11 @@ const fetchFPL = async () => {
       const teamName = player["entry_name"];
       const point = player["event_total"];
       const playerName = player["player_name"];
+      const link = player["link_to_team"];
       table.innerHTML += `
       <tr>
-        <td class="column1">${teamName}</td>
-        <td class="column2">${point}</td>
+        <td class="column1"><a href=${link}>${teamName}</a></td>
+        <td class="column2"><a href=${link}>${point}</a></td>
         <td class="column3">${playerName}</td>
       </tr>
       `;
