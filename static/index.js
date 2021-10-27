@@ -30,8 +30,8 @@ const fetchFPL = async () => {
       table.innerHTML += `
       <tr>
         <td class="column1"><a href=${link} target="_blank">${teamName}</a></td>
-        <td class="column2"><a href=${link} target="_blank>${point}</a></td>
-        <td class="column3">${playerName}</td>
+        <td class="column2"><a href=${link} target="_blank">${point}</a></td>
+        <td class="column3"><a href=${link} target="_blank">${playerName}</a></td>
       </tr>
       `;
     });
