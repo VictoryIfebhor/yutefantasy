@@ -20,7 +20,7 @@ const fetchFPL = async () => {
     const data = await res.json();
     console.log(data);
     if (data) {
-      loading.textContent = "";
+      loading.setAttribute("hidden", "true");
     }
     data.data.map((player) => {
       const teamName = player["entry_name"];
