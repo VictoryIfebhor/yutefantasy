@@ -8,38 +8,85 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons/favicon.ico') }}"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animate/animate.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="static/vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/perfect-scrollbar/perfect-scrollbar.css') }}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="static/css/util.css">
-	<link rel="stylesheet" type="text/css" href="static/css/base-main.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/base-main.css') }}">
 <!--===============================================================================================-->
 </head>
 <body>
 
 	<div class="limiter">
 		<div class="container-table100">
-            <h1>Game weeks</h1>
+            <header style="width: 100%; text-align: center;">
+                <h1>Gameweeks</h1>
+            </header>
 			<div class="wrap-table100">
 				<div class="table100">
 					<table>
 						<thead>
 							<tr class="table100-head">
-								<th class="column1">Gameweek</th>
-								<th class="column2">Highest</th>
-								<th class="column3">Score</th>
+								<th class="column1">Highest</th>
+								<th class="column2">Score</th>
+								<th class="column3">Gameweek</th>
 							</tr>
 						</thead>
 						<tbody id="table">
+							<tr id="loading">
+								<td class="column1">Loading...</td>
+								<td class="column2">Loading...</td>
+								<td class="column3">Loading...</td>
+							</tr>
+							<tr id="loading">
+								<td class="column1">Loading...</td>
+								<td class="column2">Loading...</td>
+								<td class="column3">Loading...</td>
+							</tr>
+							<tr id="loading">
+								<td class="column1">Loading...</td>
+								<td class="column2">Loading...</td>
+								<td class="column3">Loading...</td>
+							</tr>
+							<tr id="loading">
+								<td class="column1">Loading...</td>
+								<td class="column2">Loading...</td>
+								<td class="column3">Loading...</td>
+							</tr>
+							<tr id="loading">
+								<td class="column1">Loading...</td>
+								<td class="column2">Loading...</td>
+								<td class="column3">Loading...</td>
+							</tr>
+							<tr id="loading">
+								<td class="column1">Loading...</td>
+								<td class="column2">Loading...</td>
+								<td class="column3">Loading...</td>
+							</tr>
+							<tr id="loading">
+								<td class="column1">Loading...</td>
+								<td class="column2">Loading...</td>
+								<td class="column3">Loading...</td>
+							</tr>
+							<tr id="loading">
+								<td class="column1">Loading...</td>
+								<td class="column2">Loading...</td>
+								<td class="column3">Loading...</td>
+							</tr>
+							<tr id="loading">
+								<td class="column1">Loading...</td>
+								<td class="column2">Loading...</td>
+								<td class="column3">Loading...</td>
+							</tr>
 							<tr id="loading">
 								<td class="column1">Loading...</td>
 								<td class="column2">Loading...</td>
@@ -56,15 +103,15 @@
 	
 
 <!--===============================================================================================-->	
-	<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery-3.2.1.min.js') }}"></script>
 <!--===============================================================================================-->
-	<script src="static/vendor/bootstrap/js/popper.js"></script>
-	<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/popper.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 <!--===============================================================================================-->
-	<script src="static/vendor/select2/select2.min.js"></script>
+	<script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}"></script>
 <!--===============================================================================================-->
-	<script src="static/js/main.js"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 <!--===============================================================================================-->
-    <script src="/static/base.js?v=1.2"></script>
+    <script src="/static/base.js?v=1.3"></script>
 </body>
 </html>

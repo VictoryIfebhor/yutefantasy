@@ -1,7 +1,5 @@
 const table = document.getElementById("table");
-const loading = document.getElementById("loading");
 const gameweek = document.getElementById("gw");
-console.log(gameweek);
 const url = `https://vickfplmanager.deta.dev/yute/ranks/archive?gameweek=${gameweek.textContent}`;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -13,11 +11,11 @@ const fetchGW = async () => {
       const res = await fetch(url);
       const data = await res.json();
       const d = data[0]
-      console.log("bla bla bla");
-      console.log(data);
-      console.log(d);
       if (data) {
-        loading.setAttribute("hidden", "true");
+        for (let i = 0; i < 10; i++){
+            const loading = document.getElementById("loading");
+            loading.remove();
+        }
       }
       d.value.map((player) => {
         const teamName = player["entry_name"];

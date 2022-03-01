@@ -255,13 +255,13 @@
       top: 0;
     }
     table tbody tr td:nth-child(1):before {
-      content: "Gameweek";
-    }
-    table tbody tr td:nth-child(2):before {
       content: "Highest";
     }
-    table tbody tr td:nth-child(3):before {
+    table tbody tr td:nth-child(2):before {
       content: "Score";
+    }
+    table tbody tr td:nth-child(3):before {
+      content: "Gameweek";
     }
     table tbody tr td:nth-child(4):before {
       content: "";

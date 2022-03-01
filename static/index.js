@@ -6,7 +6,6 @@
 const data = [];
 const id = 107557;
 const table = document.getElementById("table");
-const loading = document.getElementById("loading");
 
 const url = `https://vickfplmanager.deta.dev/league/${id}/managers/highest`;
 
@@ -18,9 +17,11 @@ const fetchFPL = async () => {
   try {
     const res = await fetch(url);
     const data = await res.json();
-    console.log(data);
     if (data) {
-      loading.setAttribute("hidden", "true");
+      for (let i = 0; i < 10; i++){
+        const loading = document.getElementById("loading");
+        loading.remove();
+      }
     }
     data.data.map((player) => {
       const teamName = player["entry_name"];
