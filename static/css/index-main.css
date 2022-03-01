@@ -272,7 +272,7 @@ tbody tr:hover {
   table tbody tr td:nth-child(6):before {
     content: "";
   }
-
+  
   .column4,
   .column5,
   .column6 {
