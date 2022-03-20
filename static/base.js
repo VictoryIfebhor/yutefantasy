@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const fetchGWs = async () => {
     try {
-      let latestgw;
       const res = await fetch(url);
       const data = await res.json();
       if (data) {
