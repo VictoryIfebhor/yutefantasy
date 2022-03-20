@@ -1,9 +1,13 @@
+const mainTable = document.getElementById("main-table");
 const table = document.getElementById("table");
 const gameweek = document.getElementById("gw");
+const spinnerDiv = document.getElementById("spinner-item");
 const url = `https://vickfplmanager.deta.dev/yute/ranks/archive?gameweek=${gameweek.textContent}`;
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetchGW();
+  spinnerDiv.style.visibility = 'visible';
+  mainTable.style.visibility = 'hidden';
+  fetchGW();
 });
 
 const fetchGW = async () => {
@@ -32,5 +36,8 @@ const fetchGW = async () => {
       });
     } catch (error) {
       console.log(error);
+    } finally {
+      spinnerDiv.style.visibility = 'hidden';
+      mainTable.style.visibility = 'visible';
     }
 };

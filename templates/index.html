@@ -22,16 +22,17 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/util.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index-main.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/spinner.css') }}">
 <!--===============================================================================================-->
 </head>
 <body>
-
+	<div id="spinner-item" class="spinner-item"></div>
 	<div class="limiter">
 		<div class="container-table100">
             <h1>Top 10 Manager of the week</h1>
 			<div class="wrap-table100">
 				<div class="table100">
-					<table>
+					<table id="main-table">
 						<thead>
 							<tr class="table100-head">
 								<th class="column1">Team</th>
@@ -110,6 +111,6 @@
 <!--===============================================================================================-->
 	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 <!--===============================================================================================-->
-    <script src="/static/index.js?v=4.3"></script>
+    <script src="/static/index.js?v=4.42"></script>
 </body>
 </html>

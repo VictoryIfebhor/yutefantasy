@@ -5,11 +5,15 @@
 
 const data = [];
 const id = 107557;
+const mainTable = document.getElementById("main-table");
 const table = document.getElementById("table");
+const spinnerDiv = document.getElementById("spinner-item");
 
 const url = `https://vickfplmanager.deta.dev/league/${id}/managers/highest`;
 
 document.addEventListener("DOMContentLoaded", () => {
+  spinnerDiv.style.visibility = 'visible';
+  mainTable.style.visibility = 'hidden';
   fetchFPL();
 });
 
@@ -38,5 +42,8 @@ const fetchFPL = async () => {
     });
   } catch (error) {
     console.log(error);
+  } finally {
+    spinnerDiv.style.visibility = 'hidden';
+    mainTable.style.visibility = 'visible';
   }
 };
